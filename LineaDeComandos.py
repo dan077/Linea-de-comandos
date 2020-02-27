@@ -10,5 +10,10 @@ conjuntos = obtenerValores[0].split("}.{");
 
 print(conjuntos)
 
+for i in conjuntos:
+    for j in conjuntos[i]:
+    conjuntos[j] = conjuntos[j].replace("{","")
+    conjuntos[j] = conjuntos[j].replace("}","")
+
 """@andres te toca."""
 #def separarConjuntos(array):
