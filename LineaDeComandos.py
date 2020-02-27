@@ -9,3 +9,6 @@ obtenerValores = sys.argv[1:]
 conjuntos = obtenerValores[0].split("}.{");
 
 print(conjuntos)
+
+"""@andres te toca."""
+#def separarConjuntos(array):
