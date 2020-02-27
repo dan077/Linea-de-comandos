@@ -22,4 +22,4 @@ class Conjunto:
 
     def getUnion(self,conjuntoOBJ):
         union = set(self.getElementos())|set(conjuntoOBJ.getElementos()); #union de conjuntos.
-        return union
+        return sorted(union)
