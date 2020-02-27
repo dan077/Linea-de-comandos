@@ -23,7 +23,4 @@ def separarConjuntos(conjuntos):
     for i in range(len(conjuntos)):
         conjuntos[i] = conjuntos[i].replace("{","")
         conjuntos[i] = conjuntos[i].replace("}","")
-    return conjuntos
-
-a = separarConjuntos(conjuntos)
-print(conjuntos)
+separarConjuntos()
