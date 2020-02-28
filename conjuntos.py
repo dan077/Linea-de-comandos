@@ -1,8 +1,9 @@
-class Conjunto:
 
+class Conjunto:
     def __init__(self,array,cantElementos):
         self.elementos = array;
         self.cantElementos = cantElementos;
+        self.simboloNulo = "#";
 
     def __str__(self):
         elementos = "{";
@@ -22,4 +23,16 @@ class Conjunto:
 
     def getUnion(self,conjuntoOBJ):
         union = set(self.getElementos())|set(conjuntoOBJ.getElementos()); #union de conjuntos.
-        return sorted(union)
+        return sorted(union);
+
+    def getInterseccion(self,conjuntoOBJ):
+        interseccion = set(self.getElementos()) & set(conjuntoOBJ.getElementos());  # union de conjuntos.
+        return sorted(interseccion);
+
+    def getDiferencia(self,conjuntoOBJ):
+        diferencia = set(self.getElementos()) - set(conjuntoOBJ.getElementos());  # union de conjuntos.
+        return sorted(diferencia);
+
+
+
+
